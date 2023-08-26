@@ -1,14 +1,14 @@
 
 
 
-/* Nombre: Marianela Montero RodrÌguez Matricula: 22-EIIT-038 Seccion: 0541 */
+/* Nombre: Marianela Montero Rodr√≠guez Matricula: 22-EIIT-1-038 Seccion: 0541 */
 
 
 
 -- Crear la base de datos
 CREATE DATABASE MundoDeLibros;
 
--- Usar la base de datos reciÈn creada
+-- Usar la base de datos reci√©n creada
 USE MundoDeLibros;
 
 
@@ -30,7 +30,7 @@ CREATE TABLE Libros (
     FOREIGN KEY (Autor) REFERENCES Autores(ID)
 );
 
--- Crear la tabla GÈneros
+-- Crear la tabla G√©neros
 CREATE TABLE Generos (
     ID INT PRIMARY KEY,
     Nombre VARCHAR(50)
@@ -55,15 +55,15 @@ CREATE TABLE Ventas (
 -- Insertar datos en la tabla Autores
 INSERT INTO Autores (ID, Nombre, Nacionalidad)
 VALUES
-    (1, 'George Orwell', 'Brit·nico'),
-    (2, 'Gabriel GarcÌa M·rquez', 'Colombiano'),
-    (3, 'Antoine de Saint-ExupÈry', 'FrancÈs'),
-    (4, 'J.K. Rowling', 'Brit·nica'),
-    (5, 'Miguel de Cervantes', 'EspaÒol'),
+    (1, 'George Orwell', 'Brit√°nico'),
+    (2, 'Gabriel Garc√≠a M√°rquez', 'Colombiano'),
+    (3, 'Antoine de Saint-Exup√©ry', 'Franc√©s'),
+    (4, 'J.K. Rowling', 'Brit√°nica'),
+    (5, 'Miguel de Cervantes', 'Espa√±ol'),
 	(6,  'Dan Brown', 'Estadounidense'),
-    (7, 'Jane Austen', ' Brit·nica'),
+    (7, 'Jane Austen', ' Brit√°nica'),
     (8, 'F.Scott Fitzgerald', 'Estadounidense'),
-    (9, 'J.R.R. Tolkien', 'Brit·nico'),
+    (9, 'J.R.R. Tolkien', 'Brit√°nico'),
     (10, 'Harper Lee', 'Estadounidense');
 
 
@@ -71,11 +71,11 @@ VALUES
 -- Insertar datos en la tabla Generos
 INSERT INTO Generos (ID, Nombre)
 VALUES
-    (1, 'Ciencia ficciÛn'),
-    (2, 'Realismo m·gico'),
+    (1, 'Ciencia ficci√≥n'),
+    (2, 'Realismo m√°gico'),
     (3, 'Literatura infantil'),
-    (4, 'FantasÌa'),
-    (5, 'Novela cl·sica'),
+    (4, 'Fantas√≠a'),
+    (5, 'Novela cl√°sica'),
 	(6, 'Thriller de conspiracion'),
     (7, 'Novela Clasica'),
     (8, 'Novela Contemporanea'),
@@ -86,11 +86,11 @@ VALUES
 -- Insertar datos en la tabla Editoriales
 INSERT INTO Editoriales (ID, Nombre, Pais)
 VALUES
-    (1, 'Editorial Planeta', 'EspaÒa'),
+    (1, 'Editorial Planeta', 'Espa√±a'),
     (2, 'Penguin Random House', 'Estados Unidos'),
     (3, 'Editorial Norma', 'Colombia'),
     (4, 'HarperCollins', 'Reino Unido'),
-    (5, 'Alfaguara', 'EspaÒa'),
+    (5, 'Alfaguara', 'Espa√±a'),
 	(6, 'Doubleday', 'Estados Unidos'),
     (7, 'Thomas Egerton', 'Reino Unido'),
     (8, 'Charles Scribner Sons', 'Estados Unidos'),
@@ -102,15 +102,15 @@ VALUES
 INSERT INTO Libros (ID, Titulo, Autor, AnioPublicacion, Precio)
 VALUES
     (1, '1984', 1, 1949, 40.50),
-    (2, 'Cien aÒos de soledad', 2, 1967, 500),
+    (2, 'Cien a√±os de soledad', 2, 1967, 500),
     (3, 'El Principito', 3, 1943, 9.99),
     (4, 'Harry Potter y la piedra filosofal', 4, 1997, 500),
     (5, 'Don Quijote de la Mancha', 5, 1605, 700),
 	(6, 'El Codigo Da Vinci', 6, 2003, 800 ),
     (7, 'Orgullo y Prejuicio', 7, 1813, 300),
     (8, 'El Gran Gatsby', 10, 1925, 500),
-    (9, 'El SeÒor de los Anillos', 9, 1954,  600),
-    (10, 'Matar a un RuiseÒor', 8, 1960, 800);
+    (9, 'El Se√±or de los Anillos', 9, 1954,  600),
+    (10, 'Matar a un Ruise√±or', 8, 1960, 800);
 
 
 -- Insertar datos en la tabla Ventas
